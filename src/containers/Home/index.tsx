@@ -42,7 +42,7 @@ export const Home = () => {
         <>
             <div className="w-screen min-h-screen bg-black flex flex-col items-center justify-center gap-3 text-white">
                 <div className='relative w-full max-w-lg '>
-                    <textarea className="textarea w-full h-8 bg-gray-800 cursor-default resize-none text-base leading-[30px] tracking-wider" placeholder="Your password here" value={password ? password : ''} readOnly></textarea>
+                    <textarea className="textarea w-full h-8 bg-gray-800 cursor-default resize-none text-base leading-[30px] tracking-wider" placeholder="Your password generated here" value={password ? password : ''} readOnly></textarea>
                     <div className="tooltip absolute right-[8px] top-[15px] cursor-pointer" data-tip="Copy">
                         <GoCopy className='' size={20} onClick={handleCopyPassword} />
                     </div>

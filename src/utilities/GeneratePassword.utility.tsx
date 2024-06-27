@@ -15,7 +15,7 @@ export const GeneratePassword = (
 
     let generatedPassword = ''
 
-    for (let i = 0; i <= passwordLength; i++) {
+    for (let i = 0; i < passwordLength; i++) {
         generatedPassword += usableChars[Math.floor(Math.random() * (usableChars.length))]
     }
 
