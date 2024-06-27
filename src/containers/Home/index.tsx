@@ -1,9 +1,9 @@
 import { ChangeEvent, useState } from 'react';
 import { GoCopy } from "react-icons/go";
 //
+import { GeneratePassword } from '../../utilities';
 import { PASSWORD_OPTIONS } from './constants';
 
-import { GeneratePassword } from '../../utilities';
 import './Home.scss';
 
 export const Home = () => {
@@ -55,7 +55,7 @@ export const Home = () => {
                     </div>
 
                     <div className="tooltip tooltip-bottom w-full mt-3" data-tip="Recommend 12 characters long or more">
-                        <input className="range range-xs" type="range" min="1" max="20" value={passwordLength} onChange={onChangePasswordLength} />
+                        <input className="range range-xs" type="range" min="8" max="20" value={passwordLength} onChange={onChangePasswordLength} />
                     </div>
 
                     <div className="flex flex-col gap-4 mt-5">
