@@ -4,10 +4,9 @@
 
 #root {
   font-family: "Roboto";
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
   font-size: 16px;
 }
-
 html,
 body,
 div,
@@ -114,7 +113,6 @@ section {
 
 body {
   line-height: 1;
-
 }
 
 ol,
@@ -131,7 +129,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
