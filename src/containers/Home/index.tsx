@@ -9,7 +9,7 @@ import "./Home.scss";
 
 export const Home = () => {
   const [password, setPassword] = useState("");
-  const [passwordLength, setPasswordLength] = useState(8);
+  const [passwordLength, setPasswordLength] = useState(6);
   const [checkedState, setCheckedState] = useState(
     new Array(PASSWORD_OPTIONS.length).fill(false)
   );
@@ -34,12 +34,9 @@ export const Home = () => {
   };
 
   const handleGeneratePassword = () => {
-    const [useUpperCase, useNumbers, useSymbols] = PASSWORD_OPTIONS.map(
+    const [isUseUpperCase, isUseNumbers, isUseSymbols] = PASSWORD_OPTIONS.map(
       (option) => option.isChecked
     );
-    const isUseUpperCase = useUpperCase;
-    const isUseNumbers = useNumbers;
-    const isUseSymbols = useSymbols;
 
     setPassword(
       GeneratePassword(
@@ -52,12 +49,9 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    const [useUpperCase, useNumbers, useSymbols] = PASSWORD_OPTIONS.map(
+    const [isUseUpperCase, isUseNumbers, isUseSymbols] = PASSWORD_OPTIONS.map(
       (option) => option.isChecked
     );
-    const isUseUpperCase = useUpperCase;
-    const isUseNumbers = useNumbers;
-    const isUseSymbols = useSymbols;
 
     setStrengthScore(
       EvaluatePasswordStrength(
