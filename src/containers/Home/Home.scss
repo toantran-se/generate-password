@@ -2,3 +2,7 @@ input.range {
     --range-shdw: #00A96E;
     background-color: white;
 }
+
+progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+}
